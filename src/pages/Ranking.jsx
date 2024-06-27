@@ -1,5 +1,7 @@
 import React from "react";
 import Navbar from "../components/Nav";
+import styles from '../styles/Ranking.css';
+
 
 
 export function Ranking() {

@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../components/Nav";
+import styles from '../styles/AddCharacter.css';
 
 export function AddCharacter() {
     return (
