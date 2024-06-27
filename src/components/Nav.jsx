@@ -1,9 +1,10 @@
 import React from "react";
+import styles from '../styles/Nav.css'
 
 function Navbar() {
     return (
-        <div>
-            <ul id="nav">
+        <div class='navbar'>
+            <ul id="nav-list">
                 <li><a href="">Home</a></li>
                 <li><a href="">Vote</a></li>
                 <li><a href="">Ranking</a></li>

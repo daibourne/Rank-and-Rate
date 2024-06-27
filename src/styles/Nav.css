@@ -1,0 +1,27 @@
+.navbar {
+    display: flex;
+    position: sticky;
+    align-items: center;
+    top: 0px;
+    background: rgba(0, 0, 0, 0.6);
+    background-blend-mode: darken;
+    background-size: cover;
+    color: white;
+}
+
+#nav-list li {
+    float: left;
+    list-style: none;
+    border-right: 1px solid white;
+}
+
+#nav-list li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1px 16px;
+    text-decoration: none;
+}
+#nav-list li a:hover {
+    color: #ffd700;
+}
