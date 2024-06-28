@@ -1,1 +1,27 @@
 /* This file holds the css for the Vote page */
+
+.VotePage {
+    width: 100%;
+}
+
+body {
+    display: flex;
+    gap: 20px;
+    text-align: center;
+}
+
+header {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.CharacterVote {
+    width: 50%;
+}
+
+img {
+    width: 100%;
+    height: 800px;
+    margin: 10px;
+}

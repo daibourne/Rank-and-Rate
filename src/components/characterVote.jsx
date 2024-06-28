@@ -1,6 +1,6 @@
 import React from "react";
 
-function Character () {
+function CharacterVote () {
     return (
         <div className="character">
             <div className="characterName">
@@ -15,18 +15,11 @@ function Character () {
             <div className="characterBio">
                 <p>Bio of selected character</p>
             </div>
+            <div className="VoteButton">
+                <button>This Character</button>
+            </div>
         </div>
     )
 };
 
-// const characterSchema = new Schema({
-//     name: {},
-//     image: {},
-//     show: {},
-//     bio: {},
-
-// });
-
-// const Character = 
-
-export default Character;
+export default CharacterVote;

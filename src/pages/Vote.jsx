@@ -1,16 +1,18 @@
 import React from "react";
 import Navbar from "../components/Nav";
 import styles from '../styles/Vote.css';
+import CharacterVote from "../components/characterVote";
 
 
 function Vote() {
     return (
-        <div>
+        <div className="VotePage">
         <header>
             <Navbar></Navbar>
         </header>
         <body>
-            <h1>This is the Vote Page</h1>
+            <CharacterVote></CharacterVote>
+            <CharacterVote></CharacterVote>
         </body>
         </div>
     )

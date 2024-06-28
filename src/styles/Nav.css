@@ -5,8 +5,8 @@
     top: 0px;
     background: rgba(0, 0, 0, 0.6);
     background-blend-mode: darken;
-    background-size: cover;
     color: white;
+    width: 100%;
 }
 
 #nav-list li {
