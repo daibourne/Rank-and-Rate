@@ -31,6 +31,7 @@ function CharacterForm() {
         </header>
         <form onSubmit={handleSubmit}>
             <div>
+                <p>This page allows user to create and add they're own character into the ranking. Fill in the require information (all is required) and hit the submission below to start voting for them.</p>
                 <label htmlFor="name">Character Name:</label>
                 <input
                     type="text"
@@ -74,18 +75,5 @@ function CharacterForm() {
         </div>
     );
 }
-
-// export function AddCharacter() {
-//     return (
-//         <div>
-//         <header>
-//             <Navbar></Navbar>
-//         </header>
-//         <body>
-//             <p>This page allows users to add they're own character to the ranking. Fill in the necessary information (all boxes must be filled) than click the submission button at the bottom to complete your entry.</p>
-//         </body>
-//         </div>
-//     )
-// }
 
 export default CharacterForm;
