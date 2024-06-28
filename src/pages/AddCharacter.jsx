@@ -1,18 +1,91 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "../components/Nav";
 import styles from '../styles/AddCharacter.css';
 
-export function AddCharacter() {
+function CharacterForm() {
+    const [formData, setFormData] = useState({
+        name: '',
+        imageURL: '',
+        show: '',
+        bio: ''
+    });
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData((prevData) => ({
+            ...prevData,
+            [name]: value
+        }));
+    }
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log('Form Submitted:', formData);
+    };
+
     return (
-        <div>
+        <div className="webPage">
+
         <header>
             <Navbar></Navbar>
         </header>
-        <body>
-            <h1>This is the Add Character Page</h1>
-        </body>
+        <form onSubmit={handleSubmit}>
+            <div>
+                <label htmlFor="name">Character Name:</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
+                />
+            </div>
+            <div>
+                <label htmlFor="imageUrl">Character URL Image:</label>
+                <input
+                    type="text"
+                    id="imageUrl"
+                    name="imageUrl"
+                    value={formData.imageUrl}
+                    onChange={handleChange}
+                />
+            </div>
+            <div>
+                <label htmlFor="show">Character Show:</label>
+                <input
+                    type="text"
+                    id="show"
+                    name="show"
+                    value={formData.show}
+                    onChange={handleChange}
+                />
+            </div>
+            <div>
+                <label htmlFor="bio">Character Bio:</label>
+                <textarea
+                    id="bio"
+                    name="bio"
+                    value={formData.bio}
+                    onChange={handleChange}
+                />
+            </div>
+            <button type="submit">Submit</button>
+        </form>
         </div>
-    )
+    );
 }
 
-export default AddCharacter;
+// export function AddCharacter() {
+//     return (
+//         <div>
+//         <header>
+//             <Navbar></Navbar>
+//         </header>
+//         <body>
+//             <p>This page allows users to add they're own character to the ranking. Fill in the necessary information (all boxes must be filled) than click the submission button at the bottom to complete your entry.</p>
+//         </body>
+//         </div>
+//     )
+// }
+
+export default CharacterForm;
